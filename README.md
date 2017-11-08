@@ -24,13 +24,13 @@ Note that this will copy the vvv-config.yml file for you and you can skip step 1
 ```yml
   # Repo sets up project installer, hosts creates host file entries, and custom is used to authorize you on Github.
   mystaging.dev:
-    repo: https://github.com/TimeInc/vvv-provision-pethero
+    repo: https://github.com/WordPress-Phoenix/vvv2-provision-boilerplate
     hosts:
       - mystaging.dev
 ```
 3. Open CLI bash interface at VVV root and paste the following:
 ```bash
-vagrant halt; vagrant up --provision-with site-pethero.dev
+vagrant halt; vagrant up --provision-with site-provision-boilerplate.dev
 ```
 4. Open your project in PHPStorm (or choice IDE) at VVV, notice your new site in www/provision-boilerplate.dev, and visit your local development site at provision-boilerplate.dev to begin developing.
 
